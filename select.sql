@@ -1,13 +1,21 @@
-SELECT * FROM autos; -- gib mir alles , alle spalten alle zeilen
+-- VARIANTE 1: Alle Spalten und alle Zeilen auswählen
+-- Das * bedeutet "gib mir alles"
+SELECT *
+FROM personen;
 
-SELECT marke, preis FROM autos; --Nur bestimmte Spalten auswählen
+-- VARIANTE 2: Nur bestimmte Spalten auswählen
 -- Spaltennamen durch Komma trennen
+SELECT name, stadt
+FROM personen;
 
+-- VARIANTE 3: Nur eine einzige Spalte
+SELECT name
+FROM personen;
 
+-- VARIANTE 4: Spalten umbenennen mit AS (Alias)
+-- Der Alias ist nur für die Anzeige — die Tabelle bleibt unverändert
+SELECT name      AS "Voller Name",
+       alter_j   AS "Alter",
+       stadt     AS "Wohnort"
+FROM personen;
 
-SELECT marke   AS "Hersteler",
-       modell  AS "Modell", 
-       baujahr AS "Jahr"
-FROM autos;
-
-SELECT baujahr FROM autos;  -- Nur eine einzige Spalte
