@@ -1,9 +1,11 @@
+DROP TABLE IF EXISTS autos;
+
 CREATE TABLE IF NOT EXISTS autos (
-    id INT NOT NULL,
-    marke TEXT NOT NULL,
-    modell TEXT NOT NULL,
-    baujahr INT NOT NULL,
-    preis REAL NOT NULL,
+    id INT ,
+    marke TEXT ,
+    modell TEXT ,
+    baujahr INT ,
+    preis REAL ,
     PRIMARY KEY (id)
 );
 
