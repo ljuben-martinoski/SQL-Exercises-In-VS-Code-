@@ -1,9 +1,11 @@
 
+DROP TABLE IF EXISTS personen;
+
 
 CREATE TABLE IF NOT EXISTS personen (
-    id INT NOT NULL,
-    name  TEXT NOT NULL,
-    alter_j INT NOT NULL,
+    id INT ,
+    name  TEXT ,
+    alter_j INT ,
     groesse REAL,
     stadt TEXT,
     PRIMARY KEY (id)
