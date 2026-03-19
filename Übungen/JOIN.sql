@@ -12,20 +12,4 @@ aber statt NULL beim Autor soll 'Kein Autor' stehen.
 
 
 -- Ausfgabe A:
-SELECT
-    b.titel,
-    b.jahr,
-    a.name
-FROM buecher b
-INNER JOIN autoren a
-    ON b.autor_id = a.id
-WHERE a.land = 'Österreich';
-
--- Ausfgabe B:
-SELECT
-    b.titel,
-    b.jahr,
-    COALESCE(a.name, 'Kein Autor') AS autor_name
-FROM buecher b
-LEFT JOIN autoren a
-    ON b.autor_id = a.id;
+s
