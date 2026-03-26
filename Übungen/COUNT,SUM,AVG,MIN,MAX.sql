@@ -14,5 +14,10 @@
 
 -- Aufgabe A:
 
-SELECT SUM(kategorie) AS gesamteObst_PRODUKTE FROM produkte WHERE 'Obst' IS PR;
+SELECT COUNT(kategorie) AS gesamteObst_PRODUKTE FROM produkte WHERE kategorie = 'Obst';
+
+-- AUfgabe B;
+
+SELECT SUM(preis * lager) AS gesamt_wert FROM produkte;
+
 
