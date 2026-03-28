@@ -78,3 +78,17 @@ CREATE UNIQUE INDEX idx_name ON produkte(name);
 -- Jetzt kann kein zweites Produkt denselben Namen haben:
 INSERT INTO produkte (name, preis) VALUES ('Apfel', 0.99);
 -- ❌ Fehler: UNIQUE constraint failed: produkte.name
+
+
+/*
+-- Alle Indizes einer Tabelle anzeigen
+PRAGMA index_list('produkte');
+```
+```
++------+--------------+--------+
+| seq  | name         | unique |
++------+--------------+--------+
+|    0 | idx_kategorie|      0 |
+|    1 | idx_preis    |      0 |
++------+--------------+--------+
+*/
