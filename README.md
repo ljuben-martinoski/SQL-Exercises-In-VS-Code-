@@ -2,9 +2,9 @@
 
 A hands-on SQL learning project using SQLite and VSCode. Covers core SQL concepts from basics to advanced queries, including a mini school database final project.
 
-## Database
+## Databases
 
-**File:** `meine_datenbank.db` (SQLite)
+**File:** `meine_datenbank.db` (SQLite) — main learning database
 
 ### Table: `personen`
 
@@ -29,6 +29,8 @@ A hands-on SQL learning project using SQLite and VSCode. Covers core SQL concept
 | preis   | REAL | Price in EUR    |
 
 **Sample data:** VW Golf, BMW 3er, Mercedes A-Klasse, Toyota Yaris
+
+**File:** `abschlussdatenbank.db` (SQLite) — school project database (Abschlussprojekt)
 
 ---
 
